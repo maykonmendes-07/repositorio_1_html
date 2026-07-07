@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias diferentes em html5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir este site em varios dispositivos diferentes ou simplemente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width:700px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+
+    </picture>
+(Obs:TEM UMA ORDEM A MAIOR SEMPRE EM BAIXO)    
+
+
+<H1> COMO REPRODUZIR AUDIOS EM HTML5</H1>
+<p>(1° forma)</p>
+<audio src="MIDIA/Raag Charukeshi - Madhyalaya Teentaal (Sitar, Tabla) - Sandeep Das,  Amrendra Mishra.mp3" controls autoplay loop></audio>
+<p>(2º forma)</p>
+<audio >
+    <source src="MIDIA/Raag Charukeshi - Madhyalaya Teentaal (Sitar, Tabla) - Sandeep Das,  Amrendra Mishra.mp3" controls autoplay loop>
+    <source src="midia.ogg" type="audio/ogg">
+    <source src="mida.wav" type="audio/wav">
+</audio>
+<p>carrega os formatos de audios de cima para baixo</p>
+
+<p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+
+
+</body>
+</html>
